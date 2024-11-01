@@ -1,0 +1,453 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with animated background */
+body {
+    font-family: Ubuntu;
+    background: linear-gradient(-45deg, red, green, blue, yellow);
+    background-size: 400% 400%;
+    animation: animate 15s ease infinite;
+    color: #fff;
+}
+
+/* Header and Navigation styling */
+.header nav {
+    position: fixed;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #000000b7;
+    text-align: center;
+    left: 0;
+    top: 0;;
+
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.header ul li {
+    margin: 0 15px;
+}
+
+.header ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 8px 16px;
+}
+
+.header ul li a:hover {
+    background: #fff;
+    color: #000;
+    border-radius: 4px;
+}
+
+/* Home Section -------------------------------------------------------*/
+.home-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.home-section-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 180%;
+}
+
+.home-section h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    font-size: 18px;
+    width: 80%;
+    color: #ddd;
+    line-height: 1.7;
+    padding-top: 30px;
+}
+
+.proflie-container {
+    display: flex;
+    align-items: left;
+    width: 80%;
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+    border: none;
+    border-radius: 30%;
+}
+
+.profile-image {
+    width: 80%;
+    height: 100%;
+}
+
+/*About section--------------------------------------------------------*/
+.about {
+    padding: 70px 20px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.about h2{
+    font-size: 50px;
+    margin-bottom: 70px;
+}
+.about-content {
+    display: flex;
+    padding-top: 50px;
+}
+.about-content-text{
+    display: column;
+    padding-left: 80px;
+    padding-bottom: 30px;
+}
+.about-content-text button{
+    font-family: Ubuntu;
+    width:250px;
+    height: 2.5rem;
+    font-size: 18px;
+    color: #1f1f1f;
+    background-color: #ffffff80;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.about-content-text button a{
+    text-decoration: none;
+}
+.about-content-text button:hover{
+    background-color: #ffffff9a;
+}
+
+.about-content p {
+    font-size: 20px;
+    width:80%;
+    color: #ddd;
+    line-height: 1.7;
+    padding-left: 50px;
+}
+
+.about video {
+    z-index: -1;
+    width: 40%;
+    height: auto;
+    border: none;
+    border-radius: 45px;
+    padding: 0;
+}
+
+/*Skill section--------------------------------------------------------*/
+.skills{
+    padding: 70px 20px;
+    height: 100vh;
+    min-height: 100vh;
+}
+.skills h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.skills p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.inner{
+    padding-top: 20px;
+}
+.header{
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+    position:relative;
+}
+.header:after{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem; 
+    padding: 1rem 80px;
+    justify-items: center; 
+    align-items: start; 
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.skill-box{
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
+}
+.skill-title{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 45px;
+}
+.skill-icon{
+    width: 50px;
+}
+/* contact ----------------------------------------*/
+.contact {
+    height: 75vh;
+    padding: 60px 20px;
+}
+.contact h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.contact p{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.contact-container{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ffffff59;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+.contact-container h2{
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+.contact-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #dddddda6;
+    font-size: 16px;
+}
+.contact-container button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-container button:hover {
+    background-color: #0556ae;
+}
+
+/*Footer------------------------------------------*/
+.footer {
+    width: 100%;
+    background-color: #000000b7;
+}
+
+.footer h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+.footer p {
+    text-align: center;
+    padding: 5px;
+}
+
+.footer-media-link {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-media-link i {
+    font-size: 50px;
+    padding: 15px;
+}
+
+.footer-box {
+    background-color: #000;
+    padding: 5px;
+}
+
+.footer-box-list {
+    color: #fff;
+    padding: 5px 1px;
+}
+
+.footer-box-list ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+
+.footer-box-list ul li {
+    margin: 0 5px;
+}
+
+.footer-box-list ul li a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-box-list ul li a:hover {
+    color: rgba(152, 34, 34, 0.679);
+}
+
+/* Project html ---------------------------------------------------------*/
+/* --------------------------------------------------------------------- */
+.project {
+    height: 100vh;
+    padding: 60px 20px;
+}
+.project h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.project-box{
+    display: flex;
+}
+.project-box h3{
+    margin: 10px 15px;
+    text-align: center;
+}
+.project-box p{
+    text-align: center;
+    padding: 5px;
+}
+.project-container{
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ffffff59;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+.project-container img{
+    align-items: center;
+    display: block;
+    margin: auto;
+    max-width: 100%; 
+    border-radius: 8px;
+    padding: 15px;
+}
+.project-container button{
+    font-family: Ubuntu;
+    width:250px;
+    height: 2.5rem;
+    font-size: 18px;
+    color: #1f1f1f;
+    background-color: #ffffff80;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+    display: block;
+    margin: auto;
+}
+
+
+/* --------------------------------------------------------------------- */
+.achievement {
+    height: 100vh;
+    padding: 60px 20px;
+}
+.achievement h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.achievement-box{
+    display: flex;
+}
+.achievement-box h3{
+    margin: 10px 15px;
+    text-align: center;
+}
+.achievement-box p{
+    text-align: center;
+    padding: 5px;
+}
+.achievement-container{
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ffffff59;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+.achievement-container img{
+    align-items: center;
+    display: block;
+    margin: auto;
+    max-width: 60%; 
+    border-radius: 8px;
+    padding: 5px;
+}
+
+
+/* --------------------------------------------------------------------- */
+
+/* Keyframes for background animation */
+@keyframes animate {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

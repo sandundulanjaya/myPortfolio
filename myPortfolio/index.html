@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandun</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="home-section" id="home">
+        <div class="home-section-text">
+            <h2>Hello.. I'm Sandun Thilakarathna</h2>
+            <p>Welcome to my portfolio! Explore my journey as an Electronics and Computer Science undergraduate, where I
+                bring together innovation and technology. Here, you'll find my projects, skills, and experiences that
+                showcase my passion for blending electronics with computing to solve real-world problems. Dive in to see
+                how I’m turning ideas into impactful solutions.</p>
+        </div>
+        <div class="profile-container">
+            <img src="img/Photo.png" alt="Profile picture" class="profile-image">
+        </div>
+
+    </div>
+
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-content-text">
+            <p>Hi, I'm Sandun Dulanjaya Thilakarathna, an Electronics and Computer Science
+                undergraduate at the University
+                of Kelaniya. My journey in technology is driven by a passion for building innovative solutions,
+                especially
+                in IoT, automation, and robotics. I enjoy designing and implementing systems that connect the physical
+                and
+                digital worlds, exploring new ways to make everyday life smarter and more efficient. Join me as I pursue
+                projects that blend creativity and technology to create impactful solutions for the future.</p>
+                <button><a href="projects.html" target="_blank">See my Project</a></button>
+            </div>
+            <video src="videos/elec.mp4" autoplay muted loop></video>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2>My Skills</h2>
+        <p>Proficient in programming, circuit design, and innovative problem-solving.</p>
+        <div class="inner">
+            <div class="container">
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="img/html-5.png" class="skill-icon">
+                        </div>
+                        <h3>HTML 5</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="img/css-3.png" class="skill-icon">
+                        </div>
+                        <h3>css 3</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="img/js.png" class="skill-icon">
+                        </div>
+                        <h3>JS</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="img/python.png" class="skill-icon">
+                        </div>
+                        <h3>Python</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="img/web.png" class="skill-icon">
+                        </div>
+                        <h3>AWS</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="img/minus.png" class="skill-icon">
+                        </div>
+                        <h3>arduino</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaboration or inquiries!</p>
+
+        <div class="contact-container">
+            <h3>Send me a Messsage</h3>
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message::</label>
+                <textarea type="message" id="message" name="message" rows="3" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+
+    </section>
+
+    <!--Footer-->
+    <div class="footer">
+        <h1>Sandun Full stack developer</h1>
+        <p>Thank you for visiting my portfolio. Let's connect and bring ideas to life through innovation in electronics,
+            IoT, and automation.</p>
+        <div class="footer-media-link">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="footer-box">
+            Copyright &#169 2024 <a href="">SandunDeveloper</a>
+
+            <div class="footer-box-list">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
